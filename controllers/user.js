@@ -85,7 +85,7 @@ module.exports = {
       if (!user) {
         return res.status(400).json({
           status: "failed",
-          message: "Invalid email",
+          message: "Invalid username",
           data: null
         });
       }
@@ -95,7 +95,7 @@ module.exports = {
       if (!checkPassword) {
         return res.status(401).json({
           status: "failed",
-          message: "Invalid Password",
+          message: "Invalid password",
           data: null
         });
       }
